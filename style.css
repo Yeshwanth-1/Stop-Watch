@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #ffffff; /* White text color */
+}
+
+.main {
+  text-align: center;
+}
+
+.stopwatch-body {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 3rem;
+  height: 300px;
+  border: 2px solid #444; /* Slightly lighter border */
+  box-shadow: 0 0 12px 5px #111 inset;
+  border-radius: 50%;
+  background-color: #333; /* Darker background inside the stopwatch */
+}
+
+.stopwatch-inner-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+span {
+  margin-right: 0.5rem;
+  font-size: 2.5rem;
+}
+
+span#milliseconds {
+  margin-left: 2px;
+  font-size: 32px;
+}
+
+.btn-container {
+  margin-top: 2rem;
+}
+
+.main button {
+  background-color: #4CAF50; /* Green button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid #2e7d32; /* Slightly darker border color */
+  border-radius: 8px;
+  margin-right: 1rem;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.main button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
